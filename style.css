@@ -128,3 +128,24 @@ a:focus-visible{outline:3px solid #ba8449;outline-offset:5px}
 /* Covers load visibly; fallback artwork appears only if the image fails. */
 .book-display .fake-cover,.book-display .notice{display:none}
 .series-hero .series-art .fake-cover{display:none}
+
+/* Region-aware Amazon paperback and Kindle purchase controls. */
+.amazon-purchase{background:#f5f0e7;border:1px solid #e4d7c6;border-radius:3px;padding:16px 18px;margin-top:21px}
+.amazon-store-row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:13px}
+.amazon-store-row label{color:#72563b;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.amazon-store-row select{border:1px solid #d5c2a9;background:#fff;color:#203438;border-radius:2px;padding:7px 28px 7px 10px;font:600 12px system-ui,-apple-system,'Segoe UI',sans-serif;max-width:100%;cursor:pointer}
+.amazon-store-row select:focus-visible,.amazon-button:focus-visible{outline:3px solid #ad8553;outline-offset:3px}
+.amazon-buttons{display:flex;gap:10px;flex-wrap:wrap}
+.amazon-button{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:11px 14px;font-size:13px;font-weight:750;text-decoration:none;border:1px solid #b98b5c;border-radius:2px;line-height:1.35}
+.amazon-button-paperback{background:#b08153;color:#fff;border-color:#b08153}
+.amazon-button-paperback:hover{background:#916639}
+.amazon-button-kindle{background:#fff;color:#294d50;border-color:#b8cbc7}
+.amazon-button-kindle:hover{background:#e7f0ed}
+.amazon-purchase-dark{background:#214147;border:1px solid #ffffff38;margin-top:22px;max-width:455px}
+.amazon-purchase-dark .amazon-store-row label{color:#e2c49d}
+.amazon-purchase-dark .amazon-store-row select{background:#f8f5ee}
+.amazon-purchase-dark .amazon-button-paperback{background:#e8d3b3;color:#1a3439;border-color:#e8d3b3}
+.amazon-purchase-dark .amazon-button-paperback:hover{background:#f2e2c9}
+.amazon-purchase-dark .amazon-button-kindle{border-color:#8da9a3;color:#eaf3ef;background:#254d51}
+.amazon-purchase-dark .amazon-button-kindle:hover{background:#32646a}
+@media(max-width:480px){.amazon-buttons{flex-direction:column}.amazon-button{width:100%}}
