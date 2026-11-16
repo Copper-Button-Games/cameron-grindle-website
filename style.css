@@ -86,7 +86,7 @@ a:focus-visible{outline:3px solid #ba8449;outline-offset:5px}
 
 /* V2: shared series pages and approved artwork support */
 .nav a[aria-current="page"]{color:#a77950;text-decoration:underline;text-underline-offset:7px}
-.book-display .real-book-image{display:none;position:relative;z-index:3;height:340px;width:auto;max-width:80%;object-fit:contain;box-shadow:14px 19px 30px #0003}
+.book-display .real-book-image{display:block;position:relative;z-index:3;height:340px;width:auto;max-width:80%;object-fit:contain;box-shadow:14px 19px 30px #0003}
 .book-display.image-ready .fake-cover{display:none}
 .book-display.image-ready:not(.preview-display) .notice{display:none}
 .book-display.preview-display .real-book-image{height:365px;max-width:90%;box-shadow:10px 12px 23px #0002}
@@ -101,7 +101,7 @@ a:focus-visible{outline:3px solid #ba8449;outline-offset:5px}
 .series-hero figure{margin:0;justify-self:center;text-align:center;max-width:330px}
 .series-hero .series-art{background:#385359;padding:22px 27px;min-height:330px;display:grid;place-items:center;border:1px solid #a4b7a73e}
 .series-hero .series-art.warm{background:#65543e}
-.series-hero .series-art img{display:none;width:auto;max-width:100%;height:auto;max-height:425px;box-shadow:10px 14px 20px #0004}
+.series-hero .series-art img{display:block;width:auto;max-width:100%;height:auto;max-height:425px;box-shadow:10px 14px 20px #0004}
 .series-hero .series-art .fake-cover{height:280px;width:198px}
 .series-hero .series-art.image-ready .fake-cover{display:none}
 .series-hero .series-art.image-ready img{display:block}
@@ -124,3 +124,7 @@ a:focus-visible{outline:3px solid #ba8449;outline-offset:5px}
 .tiny-note{color:#94a39c;font-size:11px;margin-top:12px}
 @media(max-width:900px){.series-hero .series-hero-inner{grid-template-columns:minmax(0,1fr) 270px;gap:24px}.series-main{gap:35px}}
 @media(max-width:700px){.book-display .real-book-image{height:307px}.book-display.preview-display .real-book-image{height:325px}.series-hero{padding:43px 0}.series-hero .series-hero-inner{grid-template-columns:1fr;gap:27px}.series-hero figure{width:min(100%,330px)}.series-hero .series-art{min-height:0}.series-main{grid-template-columns:1fr}.next-up{grid-template-columns:1fr}}
+
+/* Covers load visibly; fallback artwork appears only if the image fails. */
+.book-display .fake-cover,.book-display .notice{display:none}
+.series-hero .series-art .fake-cover{display:none}
