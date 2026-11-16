@@ -12,7 +12,7 @@ Official static website for Cameron Grindle, published by Copper Button Books.
 ## Approved image files to upload
 The HTML is designed to reveal the following files automatically when placed in the **root** of the repository. Until then, each page uses a simple title-card fallback rather than a broken image.
 
-- `cleopatra-cover.jpg` — optimised web copy of the approved, published `The_Last_Map_of_Cleopatra_Front_Cover.jpg`
+- `The_Last_Map_of_Cleopatra_Corrected_Front_Cover_Web.jpg` — optimised web copy of the approved, published `The_Last_Map_of_Cleopatra_Front_Cover.jpg`
 - `grace-byte-cover.jpg` — web-optimised approved full-colour cover of **Grace & Byte: The Map in the Drone**, supplied 16 Nov 2026
 
 Only upload approved public-facing images. Do not upload draft manuscripts, personal photographs, or private metadata.
