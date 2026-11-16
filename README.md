@@ -27,8 +27,8 @@ Custom domain and VentraIP DNS are managed separately. Wait for certificate prov
 - Grace & Byte: The Map in the Drone: coming soon; no retail link until released
 - Future series books: add only after approved titles and artwork
 
-## Amazon purchase buttons
-- `amazon-links.js` chooses Amazon.com.au for Australian browser timezones, Amazon.com for US/Americas, or checks browser language and then defaults to Amazon.com elsewhere. It does **not** perform IP geolocation; browser timezones and languages are approximate.
-- Both the homepage and Georgia Adventures page provide a store selector. The selected store is saved locally (when browser storage is available).
-- Paperback ID: `1763934322`. Kindle ASIN: `B0HNC6DFK7`. These identifiers and US/AU listing availability should be checked on the respective Amazon marketplaces.
-- The `href` fallback in HTML points to Amazon Australia when scripts are disabled.
+## Amazon purchase link
+- `amazon-links.js` routes readers to Amazon.com.au when Australian browser timezones are detected and to Amazon.com for US browser timezones, with language fallback and a manually selectable store. The user's selection is remembered locally when browser storage is available.
+- The site has one compact **View on Amazon** link per Georgia purchase section. The Amazon product page supplies the available paperback and Kindle choices rather than duplicating format buttons.
+- The live paperback listing identifier is `1763934322`. The retired identifier `1763934314` must not be used.
+- Browser timezones and languages are approximate, not IP geolocation. The HTML fallback link points to Amazon Australia if scripts are disabled.
