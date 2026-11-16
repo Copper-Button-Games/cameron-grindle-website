@@ -26,3 +26,9 @@ Custom domain and VentraIP DNS are managed separately. Wait for certificate prov
 - The Last Map of Cleopatra: published; direct paperback link to Amazon Australia (only upload a canon-accurate approved front cover)
 - Grace & Byte: The Map in the Drone: coming soon; no retail link until released
 - Future series books: add only after approved titles and artwork
+
+## Amazon purchase buttons
+- `amazon-links.js` chooses Amazon.com.au for Australian browser timezones, Amazon.com for US/Americas, or checks browser language and then defaults to Amazon.com elsewhere. It does **not** perform IP geolocation; browser timezones and languages are approximate.
+- Both the homepage and Georgia Adventures page provide a store selector. The selected store is saved locally (when browser storage is available).
+- Paperback ID: `1763934322`. Kindle ASIN: `B0HNC6DFK7`. These identifiers and US/AU listing availability should be checked on the respective Amazon marketplaces.
+- The `href` fallback in HTML points to Amazon Australia when scripts are disabled.
