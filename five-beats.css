@@ -67,3 +67,32 @@
   .hero h1 span{display:block}
   .hero .art,.hero .art.has-concept{aspect-ratio:1672 / 941}
 }
+
+
+/* v0.4 — readable labels below paired story frames. */
+.frame figcaption{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  column-gap:20px;
+  row-gap:2px;
+  padding:14px 2px 0;
+  font-size:16px;
+  line-height:1.4;
+}
+.frame figcaption strong{
+  font-size:20px;
+  line-height:1.3;
+  font-weight:700;
+  color:var(--ink);
+}
+.frame figcaption span{
+  font-size:16px;
+  color:var(--quiet);
+}
+@media(max-width:767px){
+  .frame figcaption{padding-top:12px;font-size:15px;column-gap:12px;}
+  .frame figcaption strong{font-size:18px;}
+  .frame figcaption span{font-size:15px;}
+}
