@@ -147,3 +147,13 @@
 @media(prefers-reduced-motion:no-preference){
   .beat--notice .notice-image{transition:filter .22s ease}
 }
+
+
+/* Notice character cards: Georgia left; Grace and Byte stacked in the right column. */
+.insights--notice .insight-column{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  min-width:0;
+}
+.insights--notice .insight-column details{width:100%}
