@@ -46,3 +46,24 @@
  .art.has-concept{aspect-ratio:3/1}
  .art.has-concept .pending{font-size:9px;bottom:5px;left:5px}
 }
+
+
+/* v0.3: selected evergreen heroes, full artwork and responsive masthead. */
+/* Keep the two series' visual identities distinct; do not bake site copy into art. */
+.hero .art{aspect-ratio:1672 / 941}
+.hero .art.has-concept{aspect-ratio:1672 / 941}
+.hero .art.has-concept .pending{display:none}
+.hero .concept-image{object-position:center center}
+.hero h1{max-width:none}
+@media (min-width:1024px){
+  .hero h1{font-size:clamp(50px,5.1vw,74px);line-height:1.12;letter-spacing:-.04em;white-space:nowrap}
+  .hero h1 span{display:inline}
+}
+@media (min-width:768px) and (max-width:1023px){
+  .hero h1 span{display:block}
+}
+@media (max-width:767px){
+  .hero h1{white-space:normal}
+  .hero h1 span{display:block}
+  .hero .art,.hero .art.has-concept{aspect-ratio:1672 / 941}
+}
