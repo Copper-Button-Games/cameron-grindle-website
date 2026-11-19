@@ -96,3 +96,54 @@
   .frame figcaption strong{font-size:18px;}
   .frame figcaption span{font-size:15px;}
 }
+
+
+/* Beat 01 Notice — approved imagery and accessible paired discovery. */
+.beat--notice .notice-art{
+  aspect-ratio:1672 / 941;
+  background:var(--tint);
+}
+.beat--notice .notice-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.beat--notice .notice-frame.georgia .focus-marker{
+  left:76%;
+  top:73%;
+}
+.beat--notice .notice-frame.grace .focus-marker{
+  left:88%;
+  top:77%;
+  border-color:#d6ffff;
+  box-shadow:0 0 0 2px var(--ink),0 0 18px rgba(82,196,197,.5);
+}
+.beat--notice .notice-frames.is-comparing .notice-image{filter:brightness(.92)}
+.beat--notice .notice-frames.is-comparing .focus-marker{display:block}
+.beat--notice .notice-observation{
+  margin:5px 2px 0;
+  font-size:17px;
+  line-height:1.55;
+  color:var(--ink);
+}
+.beat--notice .comparison--notice .comparison-cols p{margin:0}
+.beat--notice .comparison--notice .comparison-cols strong{
+  display:block;
+  font-size:18px;
+  margin-bottom:5px;
+}
+.beat--notice .comparison--notice .comparison-cols span{display:block}
+.beat--notice .comparison--notice .comparison-connection{
+  border-top:1px solid var(--stone);
+  margin:17px 0 0;
+  padding-top:14px;
+}
+@media(max-width:767px){
+  .beat--notice .notice-observation{font-size:16px}
+}
+@media(prefers-reduced-motion:no-preference){
+  .beat--notice .notice-image{transition:filter .22s ease}
+}
