@@ -21,4 +21,4 @@ Paper `#FAF7F2`, ink `#172F32`, copper `#B8673A`. Fraunces titles and Atkinson H
 ## Deployment
 The preview site already references the two WebP files by exact filename in repository root. The files must be uploaded to the `cameron-grindle-preview` repository `main` branch for the images to appear. Keep the live `cameron-grindle-website` `main` branch unchanged. Corresponding layout work is also in that repo's `five-beats-redesign` branch.
 
-The other four beat illustrations, character cards and newsletter remain in-progress placeholders and are not part of this hero approval.
+All five beat-specific illustrations, character cards and newsletter remain in-progress placeholders and are not part of this hero approval.
