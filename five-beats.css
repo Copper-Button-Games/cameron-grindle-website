@@ -157,3 +157,23 @@
   min-width:0;
 }
 .insights--notice .insight-column details{width:100%}
+
+
+/* Beat 02 — Ask: approved paired scenes and quiet comparison emphasis. */
+.beat--ask .ask-art{aspect-ratio:1648/928;background:var(--tint)}
+.beat--ask .ask-image{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.beat--ask .ask-observation{margin:5px 2px 0;font-size:17px;line-height:1.55;color:var(--ink)}
+.beat--ask .ask-marker{width:40px;height:40px;pointer-events:none}
+.beat--ask .ask-marker--ruin{left:83%;top:15%}
+.beat--ask .ask-marker--submerged{left:67%;top:76%}
+.beat--ask .ask-marker--signal{left:72%;top:79%;border-color:#d6ffff;box-shadow:0 0 0 2px var(--ink),0 0 18px rgba(82,196,197,.5)}
+.beat--ask .ask-frames.is-comparing .ask-image{filter:brightness(.93)}
+.beat--ask .ask-frames.is-comparing .ask-marker{display:block}
+.beat--ask .comparison--ask .comparison-cols p{margin:0}
+.beat--ask .comparison--ask .comparison-cols strong{display:block;font-size:18px;margin-bottom:5px}
+.beat--ask .comparison--ask .comparison-cols span{display:block}
+.beat--ask .comparison--ask .comparison-connection{border-top:1px solid var(--stone);margin:17px 0 0;padding-top:14px}
+.insights--ask .insight-column{display:flex;flex-direction:column;gap:16px;min-width:0}
+.insights--ask .insight-column details{width:100%}
+@media(max-width:767px){.beat--ask .ask-observation{font-size:16px}}
+@media(prefers-reduced-motion:no-preference){.beat--ask .ask-image{transition:filter .22s ease}}
